@@ -1920,7 +1920,7 @@
     display: none;
 }
 
-.promotion__title {
+.store__title {
     @include fontFam;
     font-weight: 700;
     font-size: 20px;
@@ -1932,7 +1932,7 @@
     margin-right: auto;
 }
 
-.promotion {
+.store__wrapper {
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -1942,7 +1942,7 @@
     border-bottom: 1px dashed #D2D2D2;
 }
 
-.promotion__box {
+.store__box {
     width: 48%;
     box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
@@ -1953,11 +1953,11 @@
     font-size: 16px;
 }
 
-.promotion__loupe {
+.store__loupe {
     margin-bottom: 2vh;
 }
 
-.promotion__pointer {
+.store__pointer {
     margin-bottom: 2vh;
 }
 
@@ -1982,16 +1982,10 @@
     margin-bottom: 7vh;
 }
 
-.btnwrapper {
-    width: 370px;
-    height: 90px;
-    display: block;
-    margin: 0 auto;
-}
-
-.contact__btn {
+.progress__button {
     @include btnWhiteBorder;
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     height: 80px;
     display: block;
     margin: 0 auto;
@@ -2001,12 +1995,11 @@
     text-transform: uppercase;
     color: $blue;
     cursor: pointer;
+    transition: 0.5s;
 }
 
-.contact__btn:hover {
-    width: 360px;
-    height: 90px;
-    font-size: 21px;
+.progress__button:hover {
+    transform: scale(1.1);
 }
 
 .contact__title {
@@ -2065,18 +2058,18 @@
         display: none;
     }
 
-    .promotion__title {
+    .store__title {
         font-size: 16px;
         margin-bottom: 3vh;
     }
 
-    .promotion {
+    .store__wrapper {
         flex-direction: column;
         width: 90%;
         padding-bottom: 3vh;
     }
 
-    .promotion__box {
+    .store__box {
         width: 100%;
         margin-right: auto;
         margin-left: auto;
@@ -2095,21 +2088,10 @@
         margin-bottom: 3vh;
     }
 
-    .btnwrapper {
-        width: 266px;
-        height: 70px;
-    }
-
-    .contact__btn {
-        width: 256px;
+    .progress__button {
+        max-width: 256px;
         height: 60px;
         font-size: 16px;
-    }
-
-    .contact__btn:hover {
-        width: 266px;
-        height: 70px;
-        font-size: 17px;
     }
 
     .contact__title {
@@ -2122,20 +2104,5 @@
         width: 90%;
         font-size: 18px;
         margin: 0 auto 3vh auto;
-    }
-}
-
-@media screen and (max-width: 289px) {
-
-    .btnwrapper {
-        width: 95%;
-    }
-
-    .contact__btn {
-        width: 95%;
-    }
-
-    .contact__btn:hover {
-        width: 100%;
     }
 }
