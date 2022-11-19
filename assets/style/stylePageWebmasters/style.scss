@@ -1004,6 +1004,26 @@
 }
 }
 
+@media (max-width:1417px) {
+    .container{
+        .box{
+            &__webmasters{
+        .vertical{
+            &__container {
+                grid-gap: 20px;
+                column-gap: 20px;   
+            }
+        }
+        .trust {
+            &__title {
+                padding-top: 80px;
+            }
+        }
+    }
+}
+}
+}
+
 @media (max-width:768px) {
     .container {
         .vertical {
