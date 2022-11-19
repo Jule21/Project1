@@ -1585,7 +1585,6 @@ img:nth-child(6) {
 .trust {
   font-family: "Gilroy", "sans serif";
   font-style: normal;
-  max-width: 1110px;
   margin: auto;
 }
 .trust__title {
@@ -1597,7 +1596,7 @@ img:nth-child(6) {
 }
 .trust .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 250px);
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 3%;
   -moz-column-gap: 3%;
@@ -1605,7 +1604,7 @@ img:nth-child(6) {
   padding: 80px;
   justify-content: center;
 }
-.trust .gallery__img {
+.trust .gallery .img {
   max-width: 100%;
 }
 .trust__footer {
@@ -1638,7 +1637,7 @@ img:nth-child(6) {
     padding-top: 50px;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 575px) {
   .trust__footer {
     padding-top: 250px;
   }

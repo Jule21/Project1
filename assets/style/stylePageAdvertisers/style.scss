@@ -953,7 +953,6 @@
 
 .trust {
     @include fontFam;
-    max-width: 1110px;
     margin: auto;
 
     &__title {
@@ -962,14 +961,14 @@
 
     .gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 200px);
+        grid-template-columns: repeat(auto-fill, 250px);
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 3%;
         column-gap: 3%;
         padding: 80px;
         justify-content: center;
 
-        &__img {
+        .img {
             max-width: 100%;
         }
     }
@@ -1004,7 +1003,7 @@
     }
 }
 
-@media (max-width:620px) {
+@media (max-width:575px) {
     .trust {
         &__footer {
             padding-top: 250px;
