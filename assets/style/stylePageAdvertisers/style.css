@@ -2203,21 +2203,13 @@ img:nth-child(6) {
   display: flex;
   justify-content: space-around;
 }
-.development__full-systems .box-ios,
-.development__full-systems .box-android {
+.development__box-ios, .development__box-android {
   width: 40%;
   display: flex;
   box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
 }
-.development__full-systems .box-ios .ios-logo,
-.development__full-systems .box-ios .android-logo,
-.development__full-systems .box-ios .ios-text,
-.development__full-systems .box-ios .android-text,
-.development__full-systems .box-android .ios-logo,
-.development__full-systems .box-android .android-logo,
-.development__full-systems .box-android .ios-text,
-.development__full-systems .box-android .android-text {
+.development__ios-logo, .development__android-logo, .development__ios-text, .development__android-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2229,10 +2221,7 @@ img:nth-child(6) {
   line-height: 19px;
   text-align: center;
 }
-.development__full-systems .box-ios .ios-logo,
-.development__full-systems .box-ios .android-logo,
-.development__full-systems .box-android .ios-logo,
-.development__full-systems .box-android .android-logo {
+.development__ios-logo, .development__android-logo {
   border-right: 1px solid #EBEBEB;
   justify-content: space-between;
 }
@@ -2425,22 +2414,22 @@ img:nth-child(6) {
   .development__full-title {
     font-size: 16px;
   }
-  .development__full-systems,
-.development__full .box-ios,
-.development__full .box-android {
+  .development__full-systems {
     flex-direction: column;
     margin: auto;
     justify-content: space-around;
   }
-  .development__full .box-ios,
-.development__full .box-android {
+  .development__box-ios, .development__box-android {
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+    padding-bottom: 30px;
+  }
+  .development__box-ios, .development__box-android {
     width: 70%;
     height: 300px;
   }
-  .development__full .box-ios .ios-logo,
-.development__full .box-ios .android-logo,
-.development__full .box-android .ios-logo,
-.development__full .box-android .android-logo {
+  .development__ios-logo, .development__android-logo {
     border-bottom: 1px solid #EBEBEB;
     border-right: none;
   }

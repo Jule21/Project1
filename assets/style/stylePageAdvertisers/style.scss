@@ -1611,17 +1611,18 @@
         &-systems {
             display: flex;
             justify-content: space-around;
-
-            .box-ios,
-            .box-android {
+            }
+        } 
+        &__box-ios,
+        &__box-android {
                 width: 40%;
                 display: flex;
                 @include boxShadow;
-
-                .ios-logo,
-                .android-logo,
-                .ios-text,
-                .android-text {
+        }
+                &__ios-logo,
+                &__android-logo,
+                &__ios-text,
+                &__android-text {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -1630,16 +1631,12 @@
                     @include pSmall-grey
                 }
 
-
-
-                .ios-logo,
-                .android-logo {
+                &__ios-logo,
+                &__android-logo {
                     border-right: 1px solid #EBEBEB;
                     justify-content: space-between;
                 }
-            }
-        }
-    }
+    
 
     &__cycle {
         display: flex;
@@ -1855,27 +1852,30 @@
                 font-size: 16px;
             }
 
-            &-systems,
-            .box-ios,
-            .box-android {
+            &-systems{flex-direction: column;
+                margin: auto;
+                justify-content: space-around;}
+            }
+
+            &__box-ios,
+            &__box-android {
                 flex-direction: column;
                 margin: auto;
                 justify-content: space-around;
+                padding-bottom: 30px;
             }
 
-            .box-ios,
-            .box-android {
+            &__box-ios,
+            &__box-android {
                 width: 70%;
                 height: 300px;
+            }
 
-
-                .ios-logo,
-                .android-logo {
+                &__ios-logo,
+                &__android-logo {
                     border-bottom: 1px solid #EBEBEB;
                     border-right: none;
                 }
-            }
-        }
     }
 }
 
