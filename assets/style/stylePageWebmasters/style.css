@@ -1678,7 +1678,7 @@ img:nth-child(6) {
   justify-content: center;
   align-items: center;
 }
-.container .box__webmasters .trust .gallery__img {
+.container .box__webmasters .trust .gallery .img {
   max-width: 100%;
 }
 .container .box__webmasters .trust__footer {
