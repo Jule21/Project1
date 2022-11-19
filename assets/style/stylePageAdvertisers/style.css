@@ -1606,6 +1606,7 @@ img:nth-child(6) {
 }
 .trust .gallery .img {
   max-width: 100%;
+  margin: 0 auto;
 }
 .trust__footer {
   color: #939393;
@@ -1628,9 +1629,6 @@ img:nth-child(6) {
     padding: 30px;
     align-items: center;
   }
-  .trust .gallery__img {
-    max-width: 80%;
-  }
   .trust__footer {
     text-align: center;
     font-size: 13px;
@@ -1640,6 +1638,9 @@ img:nth-child(6) {
 @media (max-width: 575px) {
   .trust__footer {
     padding-top: 250px;
+  }
+  .trust .gallery .img {
+    max-width: 70%;
   }
 }
 .promotion-container {

@@ -970,6 +970,7 @@
 
         .img {
             max-width: 100%;
+            margin: 0 auto;
         }
     }
 
@@ -989,10 +990,6 @@
         .gallery {
             padding: 30px;
             align-items: center;
-
-            &__img {
-                max-width: 80%;
-            }
         }
 
         &__footer {
@@ -1008,7 +1005,14 @@
         &__footer {
             padding-top: 250px;
         }
+
+        .gallery {
+            
+        .img {
+                max-width: 70%;
+            }
     }
+}
 }
 
 .promotion-container {
