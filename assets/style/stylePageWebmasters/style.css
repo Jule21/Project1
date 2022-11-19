@@ -1689,6 +1689,21 @@ img:nth-child(6) {
   text-align: center;
 }
 
+@media (max-width: 1417px) {
+  .container .box__webmasters .vertical__container {
+    grid-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .container .box__webmasters .trust__title {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 844px) {
+  .container .trust__footer {
+    padding-top: 250px;
+  }
+}
 @media (max-width: 768px) {
   .container .vertical__title {
     font-weight: 900;
@@ -1716,10 +1731,5 @@ img:nth-child(6) {
     text-align: center;
     font-size: 13px;
     padding-top: 50px;
-  }
-}
-@media (max-width: 620px) {
-  .container .trust__footer {
-    padding-top: 250px;
   }
 }/*# sourceMappingURL=style.css.map */

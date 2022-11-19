@@ -1024,6 +1024,16 @@
 }
 }
 
+@media (max-width:844px) {
+    .container {
+        .trust {
+            &__footer {
+                padding-top: 250px;
+            }
+        }
+    }
+}
+
 @media (max-width:768px) {
     .container {
         .vertical {
@@ -1056,12 +1066,3 @@
     }
 }
 
-@media (max-width:620px) {
-    .container {
-        .trust {
-            &__footer {
-                padding-top: 250px;
-            }
-        }
-    }
-}
