@@ -1529,42 +1529,42 @@ img:nth-child(6) {
     width: 15%;
   }
 }
-.container {
-  max-width: 1920px;
+.container .box {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Gilroy", "sans serif";
   font-style: normal;
+  padding: 0 auto;
 }
-.container__webmasters {
+.container .box__webmasters {
   width: 80%;
+  margin: 0 auto;
 }
-.container__webmasters .vertical {
-  max-width: 1110px;
+.container .box__webmasters .vertical {
   display: flex;
   flex-direction: column;
 }
-.container__webmasters .vertical__title {
+.container .box__webmasters .vertical__title {
   font-weight: 900;
   font-size: 30px;
   line-height: 37px;
   text-align: center;
   text-transform: uppercase;
 }
-.container__webmasters .vertical__container {
+.container .box__webmasters .vertical__container {
   display: grid;
   padding-top: 80px;
   padding-bottom: 80px;
   grid-template-columns: repeat(auto-fill, 340px);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 1%;
-  -moz-column-gap: 1%;
-       column-gap: 1%;
+  grid-gap: 5%;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
   justify-content: center;
 }
-.container__webmasters .vertical__box-installs {
+.container .box__webmasters .vertical__box-installs {
   height: 350px;
   flex-direction: column;
   display: flex;
@@ -1578,7 +1578,7 @@ img:nth-child(6) {
   background: url(../../images/imgPageWebmasters/img/bd1.png);
   background-position: center;
 }
-.container__webmasters .vertical__box-utilities {
+.container .box__webmasters .vertical__box-utilities {
   height: 350px;
   flex-direction: column;
   display: flex;
@@ -1592,7 +1592,7 @@ img:nth-child(6) {
   background: url(../../images/imgPageWebmasters/img/bg2.png);
   background-position: center;
 }
-.container__webmasters .vertical__box-apk {
+.container .box__webmasters .vertical__box-apk {
   height: 350px;
   flex-direction: column;
   display: flex;
@@ -1606,7 +1606,7 @@ img:nth-child(6) {
   background: url(../../images/imgPageWebmasters/img/bg3.png);
   background-position: center;
 }
-.container__webmasters .vertical__box-addons {
+.container .box__webmasters .vertical__box-addons {
   height: 350px;
   flex-direction: column;
   display: flex;
@@ -1620,7 +1620,7 @@ img:nth-child(6) {
   background: url(../../images/imgPageWebmasters/img/bg4.png);
   background-position: center;
 }
-.container__webmasters .vertical__box-gambling {
+.container .box__webmasters .vertical__box-gambling {
   height: 350px;
   flex-direction: column;
   display: flex;
@@ -1634,7 +1634,7 @@ img:nth-child(6) {
   background: url(../../images/imgPageWebmasters/img/bg5.png);
   background-position: center;
 }
-.container__webmasters .vertical__box-new {
+.container .box__webmasters .vertical__box-new {
   height: 350px;
   flex-direction: column;
   display: flex;
@@ -1648,42 +1648,40 @@ img:nth-child(6) {
   background: url(../../images/imgPageWebmasters/img/bg6.png);
   background-position: center;
 }
-.container__webmasters .vertical__box-new .box-new {
+.container .box__webmasters .vertical__box-new .box-new {
   padding-bottom: 25px;
 }
-.container__webmasters .vertical__box-text {
+.container .box__webmasters .vertical__box-text {
   font-weight: 900;
   font-size: 20px;
   line-height: 25px;
   padding-bottom: 10px;
 }
-.container__webmasters .vertical__box-image {
+.container .box__webmasters .vertical__box-image {
   padding-bottom: 80px;
 }
-.container__webmasters .trust {
-  max-width: 1110px;
-}
-.container__webmasters .trust__title {
+.container .box__webmasters .trust__title {
   font-weight: 900;
   font-size: 30px;
   line-height: 37px;
   text-align: center;
   text-transform: uppercase;
 }
-.container__webmasters .trust .gallery {
+.container .box__webmasters .trust .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 250px);
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 3%;
   -moz-column-gap: 3%;
        column-gap: 3%;
   padding: 80px;
   justify-content: center;
+  align-items: center;
 }
-.container__webmasters .trust .gallery__img {
+.container .box__webmasters .trust .gallery__img {
   max-width: 100%;
 }
-.container__webmasters .trust__footer {
+.container .box__webmasters .trust__footer {
   color: #939393;
   font-weight: 500;
   font-size: 16px;

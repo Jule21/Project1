@@ -885,18 +885,19 @@
 }
 
 .container {
-    max-width: 1920px;
+    .box{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     @include fontFam;
+    padding: 0 auto;
 
     &__webmasters {
         width: 80%;
+        margin: 0 auto;
 
         .vertical {
-            max-width: 1110px;
             display: flex;
             flex-direction: column;
 
@@ -910,8 +911,8 @@
                 padding-bottom: 80px;
                 grid-template-columns: repeat(auto-fill, 340px);
                 grid-template-rows: repeat(2, 1fr);
-                grid-gap: 1%;
-                column-gap: 1%;
+                grid-gap: 5%;
+                column-gap: 5%;
                 justify-content: center;
             }
 
@@ -976,20 +977,19 @@
         }
 
         .trust {
-            max-width: 1110px;
-
             &__title {
                 @include hUpper-desktop
             }
 
             .gallery {
                 display: grid;
-                grid-template-columns: repeat(auto-fill, 200px);
+                grid-template-columns: repeat(auto-fill, 250px);
                 grid-template-rows: repeat(4, 1fr);
                 grid-gap: 3%;
                 column-gap: 3%;
                 padding: 80px;
                 justify-content: center;
+                align-items: center;
 
                 &__img {
                     max-width: 100%;
@@ -1001,6 +1001,7 @@
             }
         }
     }
+}
 }
 
 @media (max-width:768px) {
