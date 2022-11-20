@@ -4,137 +4,136 @@
 @import "../fonts/font/stylesheet.css";
 @import "../normalize/normalize.css";
 
-@media screen and (min-width:1140px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+@mixin content {
+    margin: auto;
+    width: 80%;
+}
 
-    .container {
-        max-width: 1920px;
-        width: 100;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .aboutus {
-            background-image: url(../../images/imgPageAdvertisers/img/Slice3.png);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            height: 966px;
+.container {
+    max-width: 1920px;
+    width: 100;
+    @include fontFam;
 
-            .content-aboutus {
-                margin: auto;
-                width: 80%;
+    .aboutus {
+        background-image: url(../../images/imgPageAdvertisers/img/Slice3.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 966px;
 
-                .aboutus__title {
-                    padding-top: 200px;
-                    padding-bottom: 100px;
+        .aboutus__content {
+            @include content;
 
-                    .aboutus__name {
-                        @include fontFam;
-                        font-weight: 900;
-                        font-size: 60px;
-                        line-height: 75px;
-                        text-align: center;
-                        text-transform: uppercase;
+            .aboutus__title {
+                padding-top: 200px;
+                padding-bottom: 100px;
+
+                .aboutus__name {
+                    font-weight: 900;
+                    font-size: 60px;
+                    line-height: 75px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+
+                .aboutus__moto {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+
+            .aboutus__statistics {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                height: 150px;
+
+                .stats {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 3%;
+                    padding-bottom: 3%;
+                    padding-left: 1vw;
+                    padding-right: 1vw;
+                    border-right: 2px solid rgba(255, 255, 255, 0.25);
+
+                    .statistics__number {
+                        font-weight: 800;
+                        font-size: 40px;
+                        line-height: 49px;
                         color: #FFFFFF;
                     }
 
-                    .aboutus__moto {
-                        @include fontFam;
+                    .statistics__name {
                         font-weight: 500;
-                        font-size: 20px;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .statistics__conversions {
+                    border: none;
+                }
+            }
+
+            .aboutus__users {
+                display: flex;
+                height: 300px;
+                background-color: white;
+                box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
+                border-radius: 8px;
+
+                .users__webmasters {
+                    border-right: 2px solid #F3F3F3;
+                }
+
+                .users__webmasters,
+                .users__advertisers {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding-left: 4vw;
+                    padding-right: 4vw;
+                    text-align: center;
+
+                    .webmasters__who,
+                    .advertisers__who {
+                        font-weight: 500;
+                        font-size: 16px;
                         line-height: 24px;
                         text-align: center;
+                        height: 72px;
+                    }
+
+                    .user__img {
+                        padding-left: 6%;
+                    }
+
+                    .webmasters__btn {
+                        @include btnBigBlue;
                         color: #FFFFFF;
                     }
-                }
 
-                .aboutus__statistics {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                    height: 150px;
-
-                    .stats {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        padding-top: 3%;
-                        padding-bottom: 3%;
-                        padding-left: 1vw;
-                        padding-right: 1vw;
-                        border-right: 2px solid rgba(255, 255, 255, 0.25);
-
-                        .statistics__number {
-                            @include fontFam;
-                            font-weight: 800;
-                            font-size: 40px;
-                            line-height: 49px;
-                            color: #FFFFFF;
-                        }
-
-                        .statistics__name {
-                            @include fontFam;
-                            font-weight: 500;
-                            font-size: 16px;
-                            line-height: 19px;
-                            color: #FFFFFF;
-                        }
+                    .shadow-btn:hover {
+                        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
                     }
 
-                    .statistics__conversions {
-                        border: none;
-                    }
-                }
-
-                .aboutus__users {
-                    display: flex;
-                    height: 300px;
-                    background-color: white;
-                    box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
-                    border-radius: 8px;
-
-                    .users__webmasters {
-                        border-right: 2px solid #F3F3F3;
-                    }
-
-                    .user {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-evenly;
-                        align-items: center;
-                        padding-left: 4vw;
-                        padding-right: 4vw;
-                        text-align: center;
-
-                        .who {
-                            @include fontFam;
-                            font-weight: 500;
-                            font-size: 16px;
-                            line-height: 24px;
-                            text-align: center;
-                            height: 72px;
-                        }
-
-                        .user__img {
-                            padding-left: 6%;
-                        }
-
-                        .webmasters__btn {
-                            @include btnBigBlue;
-                            color: #FFFFFF;
-                        }
-
-                        .user__btn:hover {
-                            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-                        }
-
-                        .advertisers__btn {
-                            @include btnBigGreen;
-
-                            color: #FFFFFF;
-                        }
+                    .advertisers__btn {
+                        @include btnBigGreen;
+                        color: #FFFFFF;
                     }
                 }
             }
@@ -142,85 +141,18 @@
     }
 }
 
+
 @media screen and (min-width:768px) and (max-width:1139px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     .container {
-        max-width: 1920px;
-        width: 100;
-
         .aboutus {
-            background-image: url(../../images/imgPageAdvertisers/img/Slice3.png);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            height: 966px;
-
-            .content-aboutus {
-                margin: auto;
-                width: 80%;
-
+            .aboutus__content {
                 .aboutus__title {
                     padding-top: 80px;
                     padding-bottom: 65px;
-
-                    .aboutus__name {
-                        @include fontFam;
-                        font-weight: 900;
-                        font-size: 60px;
-                        line-height: 75px;
-                        text-align: center;
-                        text-transform: uppercase;
-                        color: #FFFFFF;
-                    }
-
-                    .aboutus__moto {
-                        @include fontFam;
-                        font-weight: 500;
-                        font-size: 20px;
-                        line-height: 24px;
-                        text-align: center;
-                        color: #FFFFFF;
-                    }
                 }
 
-                .aboutus__statistics {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                    height: 150px;
-
-                    .stats {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        padding-top: 3%;
-                        padding-bottom: 3%;
-                        padding-left: 1vw;
-                        padding-right: 1vw;
-                        border-right: 2px solid rgba(255, 255, 255, 0.25);
-                        text-align: center;
-
-                        .statistics__number {
-                            @include fontFam;
-                            font-weight: 800;
-                            font-size: 40px;
-                            line-height: 49px;
-                            color: #FFFFFF;
-                        }
-
-                        .statistics__name {
-                            @include fontFam;
-                            font-weight: 500;
-                            font-size: 16px;
-                            line-height: 19px;
-                            color: #FFFFFF;
-                        }
-                    }
+                .stats {
+                    text-align: center;
 
                     .statistics__conversions {
                         border: none;
@@ -228,10 +160,8 @@
                 }
 
                 .aboutus__users {
-                    display: flex;
                     flex-direction: column;
                     height: 400px;
-                    background-color: white;
                     box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
                     border-radius: 8px;
 
@@ -239,43 +169,14 @@
                         border-bottom: 1px solid #F3F3F3;
                     }
 
-                    .user {
+                    .users__webmasters,
+                    .users__advertisers {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-evenly;
                         align-items: center;
-                        padding-left: 4vw;
-                        padding-right: 4vw;
                         padding-top: 20px;
                         padding-bottom: 20px;
-                        text-align: center;
-
-                        .who {
-                            @include fontFam;
-                            font-weight: 500;
-                            font-size: 16px;
-                            line-height: 24px;
-                            text-align: center;
-                            height: 72px;
-                        }
-
-                        .user__img {
-                            padding-left: 6%;
-                        }
-
-                        .webmasters__btn {
-                            @include btnBigBlue;
-                            color: #FFFFFF;
-                        }
-
-                        .user__btn:hover {
-                            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-                        }
-
-                        .advertisers__btn {
-                            @include btnBigGreen;
-                            color: #FFFFFF;
-                        }
                     }
                 }
             }
@@ -284,48 +185,26 @@
 }
 
 @media screen and (max-width:767px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     .container {
-        max-width: 1920px;
-        width: 100;
-
         .aboutus {
-            background-image: url(../../images/imgPageAdvertisers/img/Slice3.png);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            height: 966px;
+            height: fit-content;
 
-            .content-aboutus {
-                margin: auto;
+            .aboutus__content {
                 width: 90%;
 
                 .aboutus__title {
                     padding-top: 50px;
+                    padding-bottom: 30px;
 
                     .aboutus__name {
                         padding-bottom: 10px;
-                        @include fontFam;
-                        font-weight: 900;
                         font-size: 32px;
                         line-height: 40px;
-                        text-align: center;
-                        text-transform: uppercase;
-                        color: #FFFFFF;
                     }
 
                     .aboutus__moto {
-                        @include fontFam;
-                        font-weight: 500;
                         font-size: 16px;
                         line-height: 19px;
-                        text-align: center;
-                        color: #FFFFFF;
                     }
                 }
 
@@ -338,34 +217,21 @@
                     margin-top: 32px;
 
                     .stats {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
                         padding-top: 5%;
                         padding-bottom: 10%;
-                        padding-left: 1vw;
-                        padding-right: 1vw;
-                        border-right: 2px solid rgba(255, 255, 255, 0.25);
                         border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 
                         .statistics__number {
-                            @include fontFam;
-                            font-weight: 800;
                             font-size: 25px;
                             line-height: 34px;
-                            color: #FFFFFF;
                         }
 
                         .statistics__name {
-                            text-align: center;
-                            @include fontFam;
-                            font-weight: 500;
-                            font-size: 13px;
-                            line-height: 15px;
-                            color: #FFFFFF;
                             padding-right: 16px;
                             padding-left: 16px;
+                            font-size: 13px;
+                            line-height: 15px;
+                            text-align: center;
                         }
                     }
 
@@ -376,65 +242,38 @@
                     .statistics__years {
                         border-bottom: none;
                     }
-
-                    .statistics__conversions {
-                        border: none;
-                    }
-
                 }
 
                 .aboutus__users {
-                    display: flex;
                     flex-direction: column;
                     height: fit-content;
-                    background-color: white;
-                    box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
-                    border-radius: 8px;
 
                     .users__webmasters {
                         border-bottom: 1px solid #F3F3F3;
                     }
 
-                    .user {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-evenly;
-                        align-items: center;
-                        padding-left: 4vw;
-                        padding-right: 4vw;
-                        padding-top: 3%;
+                    .users__webmasters,
+                    .users__advertisers {
+                        padding-top: 4%;
                         padding-bottom: 20px;
-                        text-align: center;
 
-                        .who {
-                            display: flex;
-                            align-items: flex-end;
-                            @include fontFam;
-                            font-weight: 500;
+                        .webmasters__who,
+                        .advertisers__who {
                             font-size: 13px;
                             line-height: 20px;
                             text-align: center;
-                            height: 100px;
-                        }
-
-                        .user__img {
-                            padding-left: 6%;
+                            height: fit-content;
+                            padding: 2%;
                         }
 
                         .webmasters__btn {
                             @include btnSmallBlue;
-                            margin-top: 15%;
-                            color: #FFFFFF;
-                        }
-
-                        .user__btn:hover {
-                            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+                            margin-top: 5%;
                         }
 
                         .advertisers__btn {
                             @include btnSmallGreen;
-                            margin-top: 15%;
-                            color: #FFFFFF;
+                            margin-top: 5%;
                         }
                     }
                 }
@@ -443,115 +282,89 @@
     }
 }
 
-@media screen and (min-width:1140px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+.advantages {
+    @include content;
+    @include fontFam;
+
+    .advantages__title {
+        @include hUpper-desktop;
+        margin: 7% auto 7%;
+
     }
 
-    .advantages {
-        margin: auto;
-        width: 80%;
+    .advantages__pluses {
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
 
-        .advantages__title {
-            @include fontFam;
-            @include hUpper-desktop;
-            margin-bottom: 7%;
+        .advantages__ad {
+            flex-basis: calc(100% / 3);
         }
 
-        .advantages__pluses {
+        .advantages__growth {
+            flex-basis: calc(100% / 3);
+        }
+
+        .advantages__offices {
+            flex-basis: calc(100% / 3);
+        }
+
+        .advantages__own {
+            width: calc(100% / 3);
+            margin-left: auto;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .advantages__apps {
+            width: calc(100% / 3);
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .plus {
             height: fit-content;
+            text-align: center;
+            margin-top: 5%;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 23px;
 
-            .advantages__ad {
-                flex-basis: calc(100% / 3);
-            }
-
-            .advantages__growth {
-                flex-basis: calc(100% / 3);
-            }
-
-            .advantages__offices {
-                flex-basis: calc(100% / 3);
-            }
-
-            .advantages__own {
-                width: calc(100% / 3);
-                margin-left: auto;
-                display: flex;
-                flex-direction: column;
-            }
-
-            .advantages__apps {
-                width: calc(100% / 3);
-                margin-right: auto;
-                display: flex;
-                flex-direction: column;
-            }
-
-            .advantages__plus {
-                height: fit-content;
-                text-align: center;
-                margin-top: 5%;
-                @include fontFam;
-                font-weight: 300;
-                font-size: 20px;
-                line-height: 23px;
-
-                .advantages__text {
-                    padding: 30px;
-                }
+            .advantages__text {
+                padding: 30px;
             }
         }
+    }
 
-        .advantages__registration {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 200px;
+    .advantages__registration {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
 
-            .advantages__btn {
-                @include btnWhiteBorder;
-                width: 350px;
-                height: 80px;
-                color: $blue;
-                margin-top: 30px;
-            }
+        .advantages__btn {
+            @include btnWhiteBorder;
+            width: 350px;
+            height: 80px;
+            color: $blue;
+            margin-top: 30px;
+        }
 
-            .advantages__btn:hover {
-                width: 360px;
-                height: 90px;
-                font-size: 21px;
-            }
+        .advantages__btn:hover {
+            transform: scale(1.3);
         }
     }
 }
 
-
 @media screen and (min-width:768px) and (max-width:1139px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     .advantages {
-        margin: auto;
-        width: 96%;
-
         .advantages__title {
-            @include fontFam;
-            @include hUpper-desktop;
-            margin-top: 60px;
+            padding-top: 67px;
+            margin-top: 0;
         }
 
         .advantages__pluses {
-            display: flex;
-            flex-wrap: wrap;
-            height: fit-content;
-
             .advantages__own {
                 flex-basis: calc(100% / 2);
             }
@@ -571,43 +384,6 @@
             .advantages__apps {
                 width: calc(100% / 2);
                 margin: auto;
-                display: flex;
-                flex-direction: column;
-            }
-
-            .advantages__plus {
-                margin-top: 5%;
-                height: fit-content;
-                text-align: center;
-                @include fontFam;
-                font-weight: 300;
-                font-size: 20px;
-                line-height: 23px;
-
-                .advantages__text {
-                    padding: 30px;
-                }
-            }
-        }
-
-        .advantages__registration {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 200px;
-
-            .advantages__btn {
-                @include btnWhiteBorder;
-                width: 350px;
-                height: 80px;
-                color: $blue;
-                margin-top: 30px;
-            }
-
-            .advantages__btn:hover {
-                width: 360px;
-                height: 90px;
-                font-size: 21px;
             }
         }
     }
@@ -615,27 +391,13 @@
 
 
 @media screen and (max-width:767px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     .advantages {
-        margin: auto;
-        width: 90%;
-
         .advantages__title {
-            @include fontFam;
             @include hUpper-mobile;
             margin-bottom: 5%;
         }
 
         .advantages__pluses {
-            display: flex;
-            flex-wrap: wrap;
-            height: fit-content;
-
             .advantages__own {
                 flex-basis: calc(100% / 2);
             }
@@ -655,16 +417,9 @@
             .advantages__apps {
                 width: calc(100% / 2);
                 margin: auto;
-                display: flex;
-                flex-direction: column;
             }
 
-            .advantages__plus {
-                height: fit-content;
-                margin-top: 5%;
-                text-align: center;
-                @include fontFam;
-                font-weight: 300;
+            .plus {
                 font-size: 13px;
                 line-height: 15px;
 
@@ -672,29 +427,84 @@
                     margin-left: 5px;
                     margin-right: 5px;
                     word-break: break-word;
+                    padding: 15px;
                 }
             }
         }
 
         .advantages__registration {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             height: fit-content;
 
             .advantages__btn {
                 @include btnWhiteBorderXS;
                 width: 288px;
                 height: 60px;
-                color: $blue;
                 margin-top: 5%;
                 margin-bottom: 5%;
             }
 
             .advantages__btn:hover {
-                width: 290px;
-                height: 65px;
-                font-size: 18px;
+                .advantages {
+                    margin: auto;
+                    width: 90%;
+
+                    .advantages__title {
+                        @include hUpper-mobile;
+                        margin-bottom: 5%;
+                    }
+
+                    .advantages__pluses {
+
+                        .advantages__own {
+                            flex-basis: calc(100% / 2);
+                        }
+
+                        .advantages__ad {
+                            flex-basis: calc(100% / 2);
+                        }
+
+                        .advantages__growth {
+                            flex-basis: calc(100% / 2);
+                        }
+
+                        .advantages__offices {
+                            flex-basis: calc(100% / 2);
+                        }
+
+                        .advantages__apps {
+                            width: calc(100% / 2);
+                            margin: auto;
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        .plus {
+                            font-size: 13px;
+                            line-height: 15px;
+
+                            .advantages__text {
+                                margin-left: 5px;
+                                margin-right: 5px;
+                                word-break: break-word;
+                            }
+                        }
+                    }
+
+                    .advantages__registration {
+                        height: fit-content;
+
+                        .advantages__btn {
+                            @include btnWhiteBorderXS;
+                            width: 200px;
+                            height: 60px;
+                            margin: 5% auto 5%;
+                        }
+
+                        .advantages__btn:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
             }
         }
     }
