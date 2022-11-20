@@ -1570,8 +1570,7 @@
 
 .development {
     @include fontFam;
-    max-width: 1110px;
-    width: 100%;
+    width: 80%;
     @include boxShadow;
     margin: auto;
 
@@ -1708,41 +1707,31 @@
         &-text {
             @include pSmall-grey;
             font-size: 16px;
-            padding-bottom: 60px;
+            padding-bottom: 20px;
             text-align: center;
         }
+        
 
         &-button {
-            width: 370px;
-            height: 90px;
-            display: block;
-            margin: 0 auto;
-
+        @include btnWhiteBorder;
+        max-width: 350px;
+        width: 100%;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+        @include fontFam;
+        font-weight: 900;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $blue;
+        cursor: pointer;
+        transition: 0.5s;
+        text-align: center;
+        padding: 20px;
         }
 
-        .contact__btn {
-            @include btnWhiteBorder;
-            width: 350px;
-            padding: 25px;
-            display: block;
-            text-align: center;
-            @include fontFam;
-            font-weight: 900;
-            font-size: 20px;
-            text-transform: uppercase;
-            color: $blue;
-            cursor: pointer;
-
-        }
-
-        .contact__btn:hover {
-            width: 360px;
-            height: 90px;
-            font-size: 21px;
-        }
-
-        .button-blue:hover {
-            @include boxShadow;
+        &-button:hover {
+            transform: scale(1.1);
         }
     }
 
