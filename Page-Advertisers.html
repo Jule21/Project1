@@ -222,7 +222,7 @@
           </div>
         </div>
       </div>
-      <div class="second-line-container">
+      <div class="second-line">
         <div class="second-line__wrapper">
           <h1 class="second-line__title">Мы всегда в топе!</h1>
           <h2 class="second-line__subtitle">
@@ -230,15 +230,17 @@
             топ-чарты AppStore и Google Play.
           </h2>
         </div>
-        <div class="second-line-content">
-          <div class="second-line__first-card second-line__card">
+
+        <div class="second-line__content">
+          <div class="second-line__card">
             <img
               src="./assets/images/imgPageWebmasters/img/top.png"
               alt="top"
             />
             <p>Наши офферы входят в ТОПы в AppStore и Google Play</p>
           </div>
-          <div class="second-line__second-card second-line__card">
+
+          <div class="second-line__card">
             <img
               src="./assets/images/imgPageWebmasters/img/offers.png"
               alt="offers"
@@ -248,7 +250,7 @@
               найдете ни в одной другой партнерке
             </p>
           </div>
-          <div class="second-line__third-card second-line__card">
+          <div class="second-line__card">
             <img
               src="./assets/images/imgPageWebmasters/img/amount.png"
               alt="amount"
@@ -257,11 +259,11 @@
           </div>
         </div>
       </div>
-      <div class="third-line-container">
+      <div class="third-line">
         <div class="third-line__wrapper">
           <h1 class="third-line__title">
             Еженедельные выплаты
-            <span class="third-line__title third-line__title-blue"
+            <span class="third-line__title third-line__title_blue"
               >от $100</span
             >
           </h1>
@@ -383,9 +385,9 @@
           <span>и десятки других популярных компаний</span>
         </div>
       </div>
-      <div class="promotion-container">
-        <div class="promotion-title-wrapper">
-          <h1 class="promotion__title">Продвижение</h1>
+      <div class="promotion">
+        <div class="promotion__title-wrapper">
+          <h1 class="promotion__main-title">Продвижение</h1>
           <p class="promotion__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -394,17 +396,17 @@
           </p>
         </div>
         <img
-          class="promotion-line"
+          class="promotion__line"
           src="./assets/images/imgPageAdvertisers/img/line.png"
           alt="line"
         />
         <img
-          class="promotion-mobile-line"
+          class="promotion__mobile-line"
           src="./assets/images/imgPageAdvertisers/img/mobile_line.png"
           alt="line-for-mobile"
         />
-        <h2 class="promotion-formats__title">Рекламные форматы</h2>
-        <div class="promotion-formats-container">
+        <h2 class="promotion__formats-title">Рекламные форматы</h2>
+        <div class="promotion__formats">
           <a href="#">
             <div class="promotion__first-item promotion__item">
               <img
@@ -478,127 +480,145 @@
             </div>
           </a>
         </div>
-        <div class="promotion-cases-container">
-          <h2 class="promotion-cases__title">Наши кейсы</h2>
-          <div class="joom-case-block">
+        <div class="promotion__cases">
+          <h2 class="promotion__cases-title">Наши кейсы</h2>
+          <div class="promotion__joom-case">
             <img
               src="./assets/images/imgPageAdvertisers/img/joom.png"
               alt="joom"
-              class="case-logo-box"
+              class="promotion__logo"
             />
-            <div class="joom-case__items">
-              <div class="joom-case__first-item case__item">
+            <div class="promotion__joom-case__items">
+              <div
+                class="promotion__joom-case__first-item promotion__case-item"
+              >
                 <h5>Траффик</h5>
                 <p>Facebook</p>
               </div>
-              <div class="joom-case__second-item case__item">
+              <div
+                class="promotion__joom-case__second-item promotion__case-item"
+              >
                 <h5>Расходы</h5>
                 <p>54.800 $</p>
               </div>
-              <div class="joom-case__third-item case__item case__third-item">
+              <div
+                class="promotion__joom-case__third-item promotion__case-item promotion__case-item_third"
+              >
                 <h5>Показатели компании</h5>
-                <p class="case__item-blue">Покупки более чем на 200.000$</p>
+                <p class="promotion__case-item_blue">
+                  Покупки более чем на 200.000$
+                </p>
               </div>
             </div>
           </div>
-          <div class="loto-case-block">
+          <div class="promotion__loto-case">
             <img
               src="./assets/images/imgPageAdvertisers/img/loto.png"
               alt="stoloto"
-              class="case-logo-box"
+              class="promotion__logo"
             />
-            <div class="loto-case__items">
-              <div class="loto-case__first-item case__item">
+            <div class="promotion__loto-case__items">
+              <div
+                class="promotion__loto-case__first-item promotion__case-item"
+              >
                 <h5>Траффик</h5>
                 <p>Facebook, TikTok, InApp</p>
               </div>
-              <div class="loto-case__second-item case__item">
+              <div class="loto-case__second-item promotion__case-item">
                 <h5>Расходы</h5>
                 <p>10.000.000 руб.</p>
               </div>
               <div
-                class="loto-case__third-item case__item case__third-item-exception"
+                class="loto-case__third-item promotion__case-item promotion__case-item_third_exeption"
               >
                 <h5>Показатели компании</h5>
-                <p class="case__item-blue">
+                <p class="promotion__case-item_blue">
                   Привлеченные пользователи купили билеты более чем на
                   30.000.000 руб.
                 </p>
               </div>
             </div>
           </div>
-          <div class="vpn-case-block">
-            <div class="case-logo-box">
+          <div class="promotion__vpn-case">
+            <div class="promotion__logo">
               <img
                 src="./assets/images/imgPageAdvertisers/img/vpn.png"
                 alt="vpn"
               />
               <p>VPN PRO - Anonymity & Secure</p>
             </div>
-            <div class="vpn-case__items">
-              <div class="vpn-case__first-item case__item">
+            <div class="promotion__vpn-case__items">
+              <div class="promotion__vpn-case__first-item promotion__case-item">
                 <h5>Траффик</h5>
                 <p>Popunder, Push</p>
               </div>
-              <div class="vpn-case__second-item case__item">
+              <div
+                class="promotion__vpn-case__second-item promotion__case-item"
+              >
                 <h5>Расходы</h5>
                 <p>500.000 $</p>
               </div>
               <div
-                class="vpn-case__third-item case__item case__third-item-exception"
+                class="promotion__vpn-case__third-item promotion__case-item promotion__case-item_third_exeption"
               >
                 <h5>Показатели компании</h5>
-                <p class="case__item-blue">
+                <p class="promotion__case-item_blue">
                   25.000+ триалов в месяц, 7.500+ покупок,<br />ТОП-10 в США по
                   выручке в Apple Store
                 </p>
               </div>
             </div>
           </div>
-          <div class="ultima-case-block">
-            <div class="case-logo-box">
+          <div class="promotion__ultima-case">
+            <div class="promotion__logo">
               <img
                 src="./assets/images/imgPageAdvertisers/img/ultimo.png"
                 alt="ultimo"
               />
               <p>VPN Ultima</p>
             </div>
-            <div class="ultima-case__items">
-              <div class="ultima-case__first-item case__item">
+            <div class="promotion__ultima-case__items">
+              <div
+                class="promotion__ultima-case__first-item promotion__case-item"
+              >
                 <h5>Траффик</h5>
                 <p>Popunder, Push, In-Page push, Calendar</p>
               </div>
-              <div class="ultima-case__second-item case__item">
+              <div
+                class="promotion__ultima-case__second-item promotion__case-item"
+              >
                 <h5>Расходы</h5>
                 <p>160.000 $</p>
               </div>
-              <div class="ultima-case__third-item case__item case__third-item">
+              <div
+                class="promotion__ultima-case__third-item promotion__case-item promotion__case-item_third"
+              >
                 <h5>Показатели компании</h5>
-                <p class="case__item-blue">
+                <p class="promotion__case-item_blue">
                   10.000+ триалов в месяц, 4.000+ покупок
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="promotion-benefits-container">
+        <div class="benefits">
           <h2 class="benefits__title">Преимущества</h2>
-          <div class="benefit__items">
-            <div class="benefit__first-item benefit__item">
+          <div class="benefits__items">
+            <div class="benefits__first-item benefits__item">
               <img
                 src="./assets/images/imgPageAdvertisers/img/yes.png"
                 alt="approval"
               />
               <p>Сильный inhouse медиабаинг из более чем 10 человек</p>
             </div>
-            <div class="benefit__second-item benefit__item">
+            <div class="benefits__second-item benefits__item">
               <img
                 src="./assets/images/imgPageAdvertisers/img/yes.png"
                 alt="approval"
               />
               <p>Проверенный траффик высокого качества</p>
             </div>
-            <div class="benefit__third-item benefit__item">
+            <div class="benefits__third-item benefits__item">
               <img
                 src="./assets/images/imgPageAdvertisers/img/yes.png"
                 alt="approval"
@@ -608,21 +628,21 @@
                 собственных продуктов
               </p>
             </div>
-            <div class="benefit__forth-item benefit__item">
+            <div class="benefits__forth-item benefits__item">
               <img
                 src="./assets/images/imgPageAdvertisers/img/yes.png"
                 alt="approval"
               />
               <p>Собственное производство промо-материалов</p>
             </div>
-            <div class="benefit__fifth-item benefit__item">
+            <div class="benefits__fifth-item benefits__item">
               <img
                 src="./assets/images/imgPageAdvertisers/img/yes.png"
                 alt="approval"
               />
               <p>Никакого фрода и ботов</p>
             </div>
-            <div class="benefit__sixth-item benefit__item">
+            <div class="benefits__sixth-item benefits__item">
               <img
                 src="./assets/images/imgPageAdvertisers/img/yes.png"
                 alt="approval"
