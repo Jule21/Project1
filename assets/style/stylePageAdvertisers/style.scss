@@ -1659,6 +1659,7 @@
     }
 
     &__products {
+        padding-bottom: 50px;
 
         &-title {
             @include hUpper-fold-desktop;
@@ -1740,7 +1741,7 @@
     }
 }
 
-@media (min-width:768px) and (max-width:1110px) {
+@media (min-width:776px) {
     .development {
         &__header {
             &-title {
@@ -1749,7 +1750,7 @@
         }
 
         &-line {
-            max-width: 80%;
+            max-width: 90%;
         }
 
         &__products {
@@ -1764,13 +1765,8 @@
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:775px) {
     .development {
-        &__header {
-            &-title {
-                font-size: 25px;
-            }
-        }
 
         &-line {
             display: none;
@@ -1811,37 +1807,30 @@
             }
 
             &-button {
-                width: 298px;
-                height: 70px;
-
-                .contact__btn {
-                    width: 288px;
-                    height: 60px;
-                    font-weight: 16px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                }
-
-                .contact__btn:hover {
-                    width: 298px;
-                    height: 70px;
-                    font-size: 17px;
+                padding-top: 15px;
+                max-width: 256px;
+                height: 60px;
+                font-weight: 16px;
                 }
             }
         }
     }
-}
 
-@media (max-width:670px) {
+@media (max-width:800px) {
     .development {
+
+        &__header {
+            &-title {
+                font-size: 18px;
+            }
+        }
         &__full {
             &-title {
                 font-size: 16px;
             }
 
-            &-systems{flex-direction: column;
+            &-systems{
+                flex-direction: column;
                 margin: auto;
                 justify-content: space-around;}
             }

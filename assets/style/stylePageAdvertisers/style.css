@@ -2249,6 +2249,9 @@ img:nth-child(6) {
 .development__cycle-img {
   padding: 40px;
 }
+.development__products {
+  padding-bottom: 50px;
+}
 .development__products-title {
   font-weight: 700;
   font-size: 20px;
@@ -2339,12 +2342,12 @@ img:nth-child(6) {
   color: #000000;
 }
 
-@media (min-width: 768px) and (max-width: 1110px) {
+@media (min-width: 776px) {
   .development__header-title {
     font-size: 40px;
   }
   .development-line {
-    max-width: 80%;
+    max-width: 90%;
   }
   .development__products-apps {
     justify-content: center;
@@ -2353,10 +2356,7 @@ img:nth-child(6) {
     margin-top: 10%;
   }
 }
-@media (max-width: 767px) {
-  .development__header-title {
-    font-size: 25px;
-  }
+@media (max-width: 775px) {
   .development-line {
     display: none;
   }
@@ -2384,24 +2384,16 @@ img:nth-child(6) {
     font-size: 13px;
   }
   .development__products-button {
-    width: 298px;
-    height: 70px;
-  }
-  .development__products-button .contact__btn {
-    width: 288px;
+    padding-top: 15px;
+    max-width: 256px;
     height: 60px;
     font-weight: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .development__products-button .contact__btn:hover {
-    width: 298px;
-    height: 70px;
-    font-size: 17px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 800px) {
+  .development__header-title {
+    font-size: 18px;
+  }
   .development__full-title {
     font-size: 16px;
   }
