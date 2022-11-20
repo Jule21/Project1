@@ -636,19 +636,22 @@
     }
 }
 
-.contain {
-    max-width: 1920px;
+
+.container {
+    .box{
+
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     @include fontFam;
+    padding: 0 auto;
 
     &__webmasters {
         width: 80%;
+        margin: 0 auto;
 
         .vertical {
-            max-width: 1110px;
             display: flex;
             flex-direction: column;
 
@@ -662,8 +665,8 @@
                 padding-bottom: 80px;
                 grid-template-columns: repeat(auto-fill, 340px);
                 grid-template-rows: repeat(2, 1fr);
-                grid-gap: 1%;
-                column-gap: 1%;
+                grid-gap: 5%;
+                column-gap: 5%;
                 justify-content: center;
             }
 
@@ -728,28 +731,58 @@
         }
 
         .trust {
-            max-width: 1110px;
-
             &__title {
                 @include hUpper-desktop
             }
 
             .gallery {
                 display: grid;
-                grid-template-columns: repeat(auto-fill, 200px);
+                grid-template-columns: repeat(auto-fill, 250px);
                 grid-template-rows: repeat(4, 1fr);
                 grid-gap: 3%;
                 column-gap: 3%;
                 padding: 80px;
                 justify-content: center;
+                align-items: center;
 
-                &__img {
+                .img {
                     max-width: 100%;
                 }
             }
 
             &__footer {
                 @include pSmall-grey
+            }
+        }
+    }
+}
+}
+
+@media (max-width:1417px) {
+    .container{
+        .box{
+            &__webmasters{
+        .vertical{
+            &__container {
+                grid-gap: 20px;
+                column-gap: 20px;   
+            }
+        }
+        .trust {
+            &__title {
+                padding-top: 80px;
+            }
+        }
+    }
+}
+}
+}
+
+@media (max-width:844px) {
+    .container {
+        .trust {
+            &__footer {
+                padding-top: 250px;
             }
         }
     }
@@ -787,12 +820,3 @@
     }
 }
 
-@media (max-width:620px) {
-    .container {
-        .trust {
-            &__footer {
-                padding-top: 250px;
-            }
-        }
-    }
-}

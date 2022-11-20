@@ -763,7 +763,6 @@
 
 .trust {
     @include fontFam;
-    max-width: 1110px;
     margin: auto;
 
     &__title {
@@ -772,15 +771,16 @@
 
     .gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 200px);
+        grid-template-columns: repeat(auto-fill, 250px);
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 3%;
         column-gap: 3%;
         padding: 80px;
         justify-content: center;
 
-        &__img {
+        .img {
             max-width: 100%;
+            margin: 0 auto;
         }
     }
 
@@ -800,10 +800,6 @@
         .gallery {
             padding: 30px;
             align-items: center;
-
-            &__img {
-                max-width: 80%;
-            }
         }
 
         &__footer {
@@ -814,12 +810,19 @@
     }
 }
 
-@media (max-width:620px) {
+@media (max-width:575px) {
     .trust {
         &__footer {
             padding-top: 250px;
         }
+
+        .gallery {
+            
+        .img {
+                max-width: 70%;
+            }
     }
+}
 }
 
 .promotion {
@@ -1371,8 +1374,7 @@
 
 .development {
     @include fontFam;
-    max-width: 1110px;
-    width: 100%;
+    width: 80%;
     @include boxShadow;
     margin: auto;
 
@@ -1412,17 +1414,18 @@
         &-systems {
             display: flex;
             justify-content: space-around;
-
-            .box-ios,
-            .box-android {
+            }
+        } 
+        &__box-ios,
+        &__box-android {
                 width: 40%;
                 display: flex;
                 @include boxShadow;
-
-                .ios-logo,
-                .android-logo,
-                .ios-text,
-                .android-text {
+        }
+                &__ios-logo,
+                &__android-logo,
+                &__ios-text,
+                &__android-text {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -1431,16 +1434,12 @@
                     @include pSmall-grey
                 }
 
-
-
-                .ios-logo,
-                .android-logo {
+                &__ios-logo,
+                &__android-logo {
                     border-right: 1px solid #EBEBEB;
                     justify-content: space-between;
                 }
-            }
-        }
-    }
+    
 
     &__cycle {
         display: flex;
@@ -1464,6 +1463,7 @@
     }
 
     &__products {
+        padding-bottom: 50px;
 
         &-title {
             @include hUpper-fold-desktop;
@@ -1512,41 +1512,31 @@
         &-text {
             @include pSmall-grey;
             font-size: 16px;
-            padding-bottom: 60px;
+            padding-bottom: 20px;
             text-align: center;
         }
+        
 
         &-button {
-            width: 370px;
-            height: 90px;
-            display: block;
-            margin: 0 auto;
-
+        @include btnWhiteBorder;
+        max-width: 350px;
+        width: 100%;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+        @include fontFam;
+        font-weight: 900;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $blue;
+        cursor: pointer;
+        transition: 0.5s;
+        text-align: center;
+        padding: 20px;
         }
 
-        .contact__btn {
-            @include btnWhiteBorder;
-            width: 350px;
-            padding: 25px;
-            display: block;
-            text-align: center;
-            @include fontFam;
-            font-weight: 900;
-            font-size: 20px;
-            text-transform: uppercase;
-            color: $blue;
-            cursor: pointer;
-
-        }
-
-        .contact__btn:hover {
-            width: 360px;
-            height: 90px;
-            font-size: 21px;
-        }
-
-        .button-blue:hover {
-            @include boxShadow;
+        &-button:hover {
+            transform: scale(1.1);
         }
     }
 
@@ -1555,7 +1545,7 @@
     }
 }
 
-@media (min-width:768px) and (max-width:1110px) {
+@media (min-width:776px) {
     .development {
         &__header {
             &-title {
@@ -1564,7 +1554,7 @@
         }
 
         &-line {
-            max-width: 80%;
+            max-width: 90%;
         }
 
         &__products {
@@ -1579,13 +1569,8 @@
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:775px) {
     .development {
-        &__header {
-            &-title {
-                font-size: 25px;
-            }
-        }
 
         &-line {
             display: none;
@@ -1626,57 +1611,53 @@
             }
 
             &-button {
-                width: 298px;
-                height: 70px;
-
-                .contact__btn {
-                    width: 288px;
-                    height: 60px;
-                    font-weight: 16px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                }
-
-                .contact__btn:hover {
-                    width: 298px;
-                    height: 70px;
-                    font-size: 17px;
+                padding-top: 15px;
+                max-width: 256px;
+                height: 60px;
+                font-weight: 16px;
                 }
             }
         }
     }
-}
 
-@media (max-width:670px) {
+@media (max-width:800px) {
     .development {
+
+        &__header {
+            &-title {
+                font-size: 18px;
+            }
+        }
         &__full {
             &-title {
                 font-size: 16px;
             }
 
-            &-systems,
-            .box-ios,
-            .box-android {
+            &-systems{
+                flex-direction: column;
+                margin: auto;
+                justify-content: space-around;}
+            }
+
+            &__box-ios,
+            &__box-android {
                 flex-direction: column;
                 margin: auto;
                 justify-content: space-around;
+                padding-bottom: 30px;
             }
 
-            .box-ios,
-            .box-android {
+            &__box-ios,
+            &__box-android {
                 width: 70%;
                 height: 300px;
+            }
 
-
-                .ios-logo,
-                .android-logo {
+                &__ios-logo,
+                &__android-logo {
                     border-bottom: 1px solid #EBEBEB;
                     border-right: none;
                 }
-            }
-        }
     }
 }
 
