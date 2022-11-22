@@ -97,12 +97,13 @@
   width: 35px;
   height: 28px;
   border-radius: 14px;
-  transition: all 0.2s;
+  transition: all 0.4s;
   font-weight: 700;
   font-size: 11px;
   line-height: 13px;
   text-align: center;
   padding-top: 7px;
+  cursor: pointer;
 }
 .header__container .header__content .nav .nav__entrylang .nav__languages input[type=radio] {
   display: none;
@@ -593,6 +594,7 @@
 }
 .container .aboutus .aboutus__content .aboutus__users .users__webmasters .webmasters__btn,
 .container .aboutus .aboutus__content .aboutus__users .users__advertisers .webmasters__btn {
+  cursor: pointer;
   font-family: "Gilroy", "sans serif";
   font-style: normal;
   width: 354px;
@@ -612,10 +614,12 @@
 }
 .container .aboutus .aboutus__content .aboutus__users .users__webmasters .shadow-btn:hover,
 .container .aboutus .aboutus__content .aboutus__users .users__advertisers .shadow-btn:hover {
+  transition: 0.5s;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .container .aboutus .aboutus__content .aboutus__users .users__webmasters .advertisers__btn,
 .container .aboutus .aboutus__content .aboutus__users .users__advertisers .advertisers__btn {
+  cursor: pointer;
   font-family: "Gilroy", "sans serif";
   font-style: normal;
   width: 354px;
@@ -860,9 +864,11 @@
   height: 80px;
   color: #2E9ADB;
   margin-top: 30px;
+  cursor: pointer;
 }
 .advantages .advantages__registration .advantages__btn:hover {
-  transform: scale(1.3);
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1139px) {
@@ -946,71 +952,6 @@
     margin-top: 5%;
     margin-bottom: 5%;
   }
-  .advantages .advantages__registration .advantages__btn:hover .advantages {
-    margin: auto;
-    width: 90%;
-  }
-  .advantages .advantages__registration .advantages__btn:hover .advantages .advantages__title {
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 5%;
-  }
-  .advantages .advantages__registration .advantages__btn:hover .advantages .advantages__pluses .advantages__own {
-    flex-basis: 50%;
-  }
-  .advantages .advantages__registration .advantages__btn:hover .advantages .advantages__pluses .advantages__ad {
-    flex-basis: 50%;
-  }
-  .advantages .advantages__registration .advantages__btn:hover .advantages .advantages__pluses .advantages__growth {
-    flex-basis: 50%;
-  }
-  .advantages .advantages__registration .advantages__btn:hover .advantages .advantages__pluses .advantages__offices {
-    flex-basis: 50%;
-  }
-  .advantages .advantages__registration .advantages__btn:hover .advantages .advantages__pluses .advantages__apps {
-    width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .advantages .advantages__registration .advantages__btn:hover .advantages .advantages__pluses .plus {
-    font-size: 13px;
-    line-height: 15px;
-  }
-  .advantages .advantages__registration .advantages__btn:hover .advantages .advantages__pluses .plus .advantages__text {
-    margin-left: 5px;
-    margin-right: 5px;
-    word-break: break-word;
-  }
-  .advantages .advantages__registration .advantages__btn:hover .advantages .advantages__registration {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .advantages .advantages__registration .advantages__btn:hover .advantages .advantages__registration .advantages__btn {
-    font-family: "Gilroy", "sans serif";
-    font-style: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #FFFFFF;
-    border: 2px solid #2E9ADB;
-    border-radius: 40px;
-    width: 200px;
-    height: 60px;
-    margin: 5% auto 5%;
-  }
-  .advantages .advantages__registration .advantages__btn:hover .advantages .advantages__registration .advantages__btn:hover {
-    transform: scale(1.1);
-  }
 }
 .second-line {
   padding: 0;
@@ -1019,14 +960,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.third-line__wrapper {
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .second-line__title {
@@ -1057,44 +990,13 @@
   padding-top: 2vh;
 }
 
-.third-line__list img {
-  max-width: 100%;
-}
-
-.third-line__title {
-  font-family: "Gilroy", "sans serif";
-  font-style: normal;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: rgb(0, 0, 0);
-  padding-bottom: 2.7vh;
-}
-
-.third-line__title_blue {
-  color: rgb(46, 154, 219);
-}
-
-.third-line__subtitle {
-  font-family: "Gilroy", "sans serif";
-  font-style: normal;
-  font-weight: 500;
-  color: rgb(147, 147, 147);
-}
-
-.third-line__list {
-  margin: 12vh auto 6vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 @media screen and (min-width: 768px) {
   .second-line {
     background-image: url(../../images/imgPageWebmasters/img/bg_second_line.png);
     max-width: 100vw;
   }
   .second-line__wrapper {
-    width: 46%;
+    width: 45%;
     margin: 0 auto 6vh auto;
     padding-top: 15vh;
     text-align: center;
@@ -1127,34 +1029,6 @@
     justify-content: space-between;
     align-items: flex-start;
     padding-bottom: 14.2vh;
-  }
-  .third-line__wrapper {
-    width: 50%;
-  }
-  .third-line__title {
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 37px;
-    text-align: center;
-  }
-  .third-line__subtitle {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .third-line__list {
-    width: 90%;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .third-line__list img {
-    margin-left: 1.4vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .third-line__list {
-    width: 80%;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1195,48 +1069,6 @@
     font-size: 13px;
     line-height: 16px;
   }
-  .third-line__wrapper {
-    width: 85%;
-  }
-  .third-line__title {
-    font-size: 20px;
-    line-height: 25px;
-  }
-  .third-line__subtitle {
-    font-size: 13px;
-    line-height: 15px;
-  }
-  .third-line__list {
-    width: 85%;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .third-line__list img {
-    width: 35%;
-    padding-bottom: 2vh;
-  }
-  .third-line__list img:nth-child(1) {
-    order: 1;
-  }
-  .third-line__list img:nth-child(2) {
-    order: 2;
-  }
-  .third-line__list img:nth-child(3) {
-    order: 4;
-  }
-  .third-line__list img:nth-child(4) {
-    order: 5;
-  }
-  .third-line__list img:nth-child(5) {
-    order: 6;
-  }
-  .third-line__list img:nth-child(6) {
-    order: 3;
-  }
-  .third-line__list img:nth-child(5),
-img:nth-child(6) {
-    width: 15%;
-  }
 }
 .trust {
   font-family: "Gilroy", "sans serif";
@@ -1257,7 +1089,7 @@ img:nth-child(6) {
   grid-gap: 3%;
   -moz-column-gap: 3%;
        column-gap: 3%;
-  padding: 80px;
+  padding: 80px 10% 80px 10%;
   justify-content: center;
 }
 .trust .gallery .img {
@@ -1834,11 +1666,16 @@ img:nth-child(6) {
   align-items: center;
 }
 .development__header-title {
-  color: #2E9ADB;
+  font-family: "Gilroy", "sans serif";
+  font-style: normal;
   font-weight: 900;
   font-size: 60px;
-  line-height: 75px;
+  text-transform: uppercase;
+  color: #2E9ADB;
   text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .development__header-text {
   width: 70%;
@@ -2094,6 +1931,7 @@ img:nth-child(6) {
   border-radius: 8px;
   padding-top: 5vh;
   padding-bottom: 5vh;
+  margin-top: 4rem;
 }
 
 .optimization__title {
